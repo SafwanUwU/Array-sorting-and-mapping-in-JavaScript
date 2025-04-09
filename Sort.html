@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fruits</title>
+  </head>
+  <body>
+    <h2>JavaScript Arra Sort Reverse</h2>
+
+    <button onclick="sortfunction()">Sort Me</button>
+    <button onclick="reversefunction()">Reverse Me</button>
+
+    <p id="result"></p>
+
+    <h3>Multiply every element in the array witth 10</h3>
+    <p id="product_value"></p>
+
+    <script>
+      var fruits = [
+        "Banana",
+        "Orange",
+        "Apple",
+        "Mango",
+        "DragonFruit",
+        "Nashpati",
+        "Kadaal",
+        "Yaay",
+      ];
+      document.getElementById("result").innerHTML = fruits;
+
+      function sortfunction() {
+        fruits.sort();
+        document.getElementById("result").innerHTML = fruits;
+      }
+      function reversefunction() {
+        fruits.reverse();
+        document.getElementById("result").i;
+
+        nnerHTML = fruits;
+      }
+
+      var numbers = [28, 9, 19, 567, 169];
+
+      function myFuncttion(num) {
+        return num * 10;
+      }
+      var newarray = numbers.map(myFuncttion);
+      document.getElementById("product_value").innerHTML =
+        newarray.join(" == ");
+    </script>
+  </body>
+</html>
