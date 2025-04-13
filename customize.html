@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fruits</title>
+    <link href="https://fonts.cdnfonts.com/css/blockbusted" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/kids-club" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/cram" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/eight-days-a-week"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/home-furniture"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: darksalmon">
+    <div
+      style="
+        background-color: bisque;
+        font-family: Eight Days A Week;
+        font-size: 55px;
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 20px;
+        margin: 30px auto;
+        width: 900px;
+        box-shadow: 0 0 15px black;
+      "
+    >
+      <h2 style="font-family: Blockbusted; font-size: 45px">
+        JavaScript array Sort Reverse
+      </h2>
+
+      <button
+        style="
+          font-family: Kids Club;
+          font-size: 32px;
+          background-color: darkgrey;
+        "
+        onclick="sortfunction()"
+      >
+        Sort Me
+      </button>
+      <button
+        style="
+          font-family: Kids Club;
+          font-size: 32px;
+          background-color: darkgray;
+        "
+        onclick="reversefunction()"
+      >
+        Reverse Me
+      </button>
+    </div>
+
+    <p style="font-family: Eight Days A Week; font-size: 61px" id="result"></p>
+    <div
+      style="
+        background-color: bisque;
+        font-family: Eight Days A Week;
+        font-size: 55px;
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 20px;
+        margin: 30px auto;
+        width: 900px;
+        box-shadow: 0 0 15px black;
+      "
+    >
+      <h3>Multiply every element in the array with 10</h3>
+      <p id="product_value"></p>
+    </div>
+    <script>
+      var fruits = [
+        "Banana | ",
+        "Orange | ",
+        "Apple | ",
+        "Mango | ",
+        "DragonFruit | ",
+        "Nashpati | ",
+        "Kadaal",
+      ];
+      document.getElementById("result").innerHTML = fruits;
+
+      function sortfunction() {
+        fruits.sort();
+        document.getElementById("result").innerHTML = fruits;
+      }
+      function reversefunction() {
+        fruits.reverse();
+        document.getElementById("result").i;
+
+        nnerHTML = fruits;
+      }
+
+      var numbers = [28, 9, 19, 567, 169];
+
+      function myFuncttion(num) {
+        return num * 10;
+      }
+      var newarray = numbers.map(myFuncttion);
+      document.getElementById("product_value").innerHTML =
+        newarray.join(" == ");
+    </script>
+  </body>
+</html>
